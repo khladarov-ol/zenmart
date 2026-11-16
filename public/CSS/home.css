@@ -1,4 +1,5 @@
 .home_page {
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -20,7 +21,7 @@
 }
 
 
-.container .header_left {
+.header_frame .container .header_left {
     position: relative;
     padding: 15px;
     width: 875px;
@@ -28,16 +29,17 @@
 
     background-color: #0053F6;
     background-image: url(../images/icons/header_bg.svg);
+    border-radius: 5px;
 }
 
 
-.header_left .header_content {
+.header_frame .header_left .header_content {
     /* margin-top: 90px; */
     display: flex;
     flex-direction: column;
 }
 
-.header_content div {
+.header_frame .header_content div {
     margin-top: 90px;
     width: 104px;
     height: 30px;
@@ -56,7 +58,7 @@ font-weight: 500;
 line-height: 22px;
 }
 
-.header_content span {
+.header_frame .header_content span {
     margin-top: 10px;
     width: 428px;
     /* height: 152px; */
@@ -68,7 +70,7 @@ line-height: 22px;
  color: #ffffff;
 }
 
-.header_content p {
+.header_frame .header_content p {
     margin-top: 10px;
      font-family: "Jost";
  font-style: normal;
@@ -78,7 +80,7 @@ line-height: 22px;
  color: #ffffff;
 }
 
-.header_content a {
+.header_frame .header_content a {
     margin-top: 20px;
     width: 140px;
     height: 52px;
@@ -98,12 +100,12 @@ font-weight: 500;
 line-height: 22px;
 }
 
-.header_content img {
+.header_frame .header_content img {
     position: absolute;
     right: 10px;
 }
 
-.container .header_right {
+.header_frame .container .header_right {
     position: relative;
     margin-left: 20px;
     display: flex;
@@ -112,17 +114,17 @@ line-height: 22px;
    
 }
 
-.header_right .header_box {
+.header_frame .header_right .header_box {
     width: 420px;
     height: 240px;
 
     display: flex;
     flex-direction: row;
    background: rgba(242, 242, 242, 1);
-   border-radius: 7px;
+   border-radius: 7%;
 }
 
-.header_right .box_left {
+.header_frame .header_right .box_left {
     margin-left: 30px;
     width: 50%;
 
@@ -131,7 +133,7 @@ line-height: 22px;
     justify-content: center;
 }
 
-.box_left span {
+.header_frame .box_left span {
     color: rgba(0, 83, 246, 1);
 
 font-family: "Jost";
@@ -143,7 +145,7 @@ letter-spacing: 0%;
 text-align: left;
 }
 
-.box_left p {
+.header_frame .box_left p {
     margin: 10px 0;
     color: rgba(4, 30, 66, 1);
 
@@ -156,7 +158,7 @@ line-height: 38px;
 color: #041e42;
 }
 
-.box_left a {
+.header_frame .box_left a {
     font-family: "Jost";
 font-style: normal;
 font-size: 15px;
@@ -165,7 +167,7 @@ line-height: 22px;
 color: #041e42;
 }
 
-.box_left .hover_border {
+.header_frame .box_left .hover_border {
     margin-top: 3px;
     width: 32px;
     height: 2px;
@@ -173,11 +175,74 @@ color: #041e42;
     background: rgba(4, 30, 66, 1);
 }
 
-.header_box .box_right {
+.header_frame .header_box .box_right {
     width: 50%;
 }
 
-.box_right img {
+.header_frame .box_right img {
     width: 100%;
     height: 100%;   
+}
+
+/* SERVICE */
+.home_page .service_frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.service_frame .container {
+    flex-direction: row;
+
+}
+
+.service_frame .container .service_box {
+    width: 25%;
+    height: 86px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 1px solid #eaeaea;
+}
+
+.service_frame .service_box img {
+    width: 35px;
+    height: 35px;
+
+}
+
+.service_frame .service_box .service_content {
+    margin-left: 14px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.service_frame .service_content span {
+    color: rgba(4, 30, 66, 1);
+
+font-family: "Jost";
+font-style: Medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.service_frame .service_content p {
+    color: rgba(98, 105, 116, 1);
+
+font-family: "Jost";
+font-style: Regular;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
 }
