@@ -43,6 +43,59 @@ letter-spacing: 0%;
     border-bottom: 2px  solid  rgba(4, 30, 66, 1);
 }
 
+/* PAGINATION */
+
+.container .paginaton_box {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .paginaton_box .paginaton_main {
+    width: auto;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.paginaton_main img {
+    cursor: pointer;
+}
+
+.container .paginaton_main .pagination_dot {
+    max-resolution: 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.container .pagination_dot .dot {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.container .pagination_dot .dot.active {
+     border: 2px solid #112137;
+}
+
+.container .pagination_dot .dot div {
+    width: 4px;
+    height: 4px;
+    background: rgba(17, 33, 55, 1);
+    border-radius: 50%;
+}
+
 .header_frame {
     position: relative;
     margin-top: 47px;
@@ -367,7 +420,7 @@ text-align: center;
 
 }
 
-.container .product_wrapper {
+.sellig_product_frame .container .product_wrapper {
     position: relative;
     margin-top: 30px;
     width: 100%;
@@ -378,18 +431,19 @@ text-align: center;
     justify-content: space-between;
 }
 
-.product_wrapper .next_prev_box
+.sellig_product_frame .product_wrapper .next_prev_box
 {
     width: 25px;
 }
 
-.next_prev_box img {
+.sellig_product_frame .next_prev_box img {
     position: absolute;
     top: 50%;
+    cursor: pointer;
 
 }
 
-.product_wrapper .product_boxes {
+.sellig_product_frame .product_wrapper .product_boxes {
     position: relative;
     width: 1224px;
     height: 452px;
@@ -398,7 +452,7 @@ text-align: center;
     flex-direction: row;
 }
 
-.product_boxes .product_box {
+.sellig_product_frame .product_boxes .product_box {
     width: 306px;
     height: 100%;
 
@@ -407,12 +461,12 @@ text-align: center;
     /* cursor: pointer; */
 }
 
-.product_box .product_img_box {
+.sellig_product_frame .product_box .product_img_box {
     width: 100%;
     height: 280px;
 }
 
-.product_img_box .hover_box {
+.sellig_product_frame .product_img_box .hover_box {
     display: none;
   
     width: 100%;
@@ -423,7 +477,7 @@ text-align: center;
     align-items: center;
 }
 
-.hover_box button {
+.sellig_product_frame .hover_box button {
     margin-bottom: 10px;
     width: 260px;
     height: 50px;
@@ -448,18 +502,18 @@ letter-spacing: 0%;
 }
 
 
-.product_img_box:hover .hover_box {
+.sellig_product_frame .product_img_box:hover .hover_box {
     display: flex;
 }
 
-.product_box .product_content_box {
+.sellig_product_frame .product_box .product_content_box {
     width: 100%;
     padding: 5px 22px;
     height: auto;
     box-sizing: border-box;
 }
 
-.product_content_box .product_title {
+.sellig_product_frame .product_content_box .product_title {
 color: rgba(98, 105, 116, 1);
 
 font-family: "Jost";
@@ -472,7 +526,7 @@ text-align: left;
 text-transform: uppercase;
 }
 
-.product_content_box .product_desc {
+.sellig_product_frame .product_content_box .product_desc {
    margin-top: 7px;
    height: 56px;
    color: rgba(4, 30, 66, 1);
@@ -486,18 +540,18 @@ letter-spacing: 0%;
 text-align: left;
 overflow: hidden;
 }
-.product_content_box .reviw_box {
+.sellig_product_frame .product_content_box .reviw_box {
     margin-top: 7px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.reviw_box img {
+.sellig_product_frame .reviw_box img {
     margin-right: 5px;
 }
 
-.reviw_box span {
+.sellig_product_frame .reviw_box span {
     margin-left: 10px;
 
     color: rgba(98, 105, 116, 1);
@@ -511,7 +565,7 @@ letter-spacing: 0%;
 text-align: left;
 }
 
-.product_content_box .prace_box {
+.sellig_product_frame .product_content_box .prace_box {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -519,11 +573,11 @@ text-align: left;
 
 }
 
-.prace_box strong{
+.sellig_product_frame .prace_box strong{
    color: rgba(4, 30, 66, 1);
 
 font-family: "Jost";
-font-style: Medium;
+font-style: normal;
 font-size: 18px;
 font-weight: 500;
 line-height: 26px;
@@ -531,12 +585,12 @@ letter-spacing: 0%;
 text-align: left;
 }
 
-.prace_box span {
+.sellig_product_frame .prace_box span {
     margin-left: 10px;
 color: rgba(98, 105, 116, 1);
 
 font-family: "Jost";
-font-style: Regular;
+font-style: 'Regular';
 font-size: 14px;
 font-weight: 400;
 line-height: 22px;
