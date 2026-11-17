@@ -18,7 +18,7 @@
     color: rgba(4, 30, 66, 1);
 
 font-family: "Jost";
-font-style: Medium;
+font-style: normal;
 font-size: 28px;
 font-weight: 500;
 line-height: 40px;
@@ -69,7 +69,7 @@ letter-spacing: 0%;
 }
 
 .container .paginaton_main .pagination_dot {
-    max-resolution: 0 20px;
+    margin: 0 20px;
     display: flex;
     flex-direction: row;
 }
